@@ -41,7 +41,7 @@ namespace Hoveniersadministratie
             if (LblNaam1.Text == "")
             {
                LblNaam1.BorderStyle = BorderStyle.None;
-            }
+            } 
             if (LblWater1.Text == "")
             {
                 LblWater1.BorderStyle = BorderStyle.None;
