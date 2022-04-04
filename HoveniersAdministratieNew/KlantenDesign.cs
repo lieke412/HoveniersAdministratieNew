@@ -13,12 +13,14 @@ namespace Hoveniersadministratie
 {
     public partial class KlantenDesign : Form
     {
+        SQLConnection GetData = new SQLConnection();
         public KlantenDesign()
         {
             InitializeComponent();
             //SqlConnect1();
             //listBox1.Items.Clear();
             //listBox1.Items.Add(Test1);
+            label2.Text = Klant1.ToString();
         }
         private void BtnFlora_Click(object sender, EventArgs e)
         {

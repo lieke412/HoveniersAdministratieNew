@@ -8,7 +8,7 @@ namespace HoveniersAdministratieNew_DomeinClasses
 {
     public class Manager : Gebruiker
     {
-        public Manager(string Naam, string Rol) : base(Naam, Rol)
+        public Manager(string Naam, bool IsManager) : base(Naam, IsManager)
         { }
     }
 }

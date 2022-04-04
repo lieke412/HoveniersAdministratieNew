@@ -8,16 +8,16 @@ namespace HoveniersAdministratieNew_DomeinClasses
 {
     public class Flora : Klant
     {
-        private string FloraNaam;
-        private DateTime FloraWaterMoment;
-        private string FloraJaargetijdeWater;
-        private int FloraWaterAantal;
-        private DateTime FloraSnoeiMoment;
-        private string FloraJaargetijdeSnoeien;
-        private int FloraSnoeienAantal;
-        private string FloraOpmerkingen;
-        private string FloraSoort;
-        public List<Flora> FloraList = new List<Flora>();
+        private readonly string FloraNaam;
+        private readonly DateTime FloraWaterMoment;
+        private readonly string FloraJaargetijdeWater;
+        private readonly int FloraWaterAantal;
+        private readonly DateTime FloraSnoeiMoment;
+        private readonly string FloraJaargetijdeSnoeien;
+        private readonly int FloraSnoeienAantal;
+        private readonly string FloraOpmerkingen;
+        private readonly string FloraSoort;
+        public readonly List<Flora> FloraList = new List<Flora>();
 
         public Flora(string floraNaam, DateTime floraWaterMoment, string floraJaargetijdeWater, int floraWaterAantal, 
             DateTime floraSnoeiMoment, string floraJaargetijdeSnoeien, int floraSnoeienAantal, string floraOpmerkingen, string floraSoort,

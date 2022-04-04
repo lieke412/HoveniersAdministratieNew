@@ -33,22 +33,24 @@ namespace Hoveniersadministratie
             //    FloraSnoeiMoment, FloraJaargetijdeSnoeien, FloraSnoeienAantal, FloraOpmerkingen, FloraSoort);
         }
 
+        private const string Empty = "";
+
         // Maakt alle textboxen leeg. Geeft deze de waarde ""
-        public static string SetValueForTBoxNaam1 = "";
-        public static string SetValueForTBoxWater1 = "";
-        public static string SetValueForTBoxSnoeien1 = "";
-        public static string SetValueForTBoxJaargetijde1 = "";
-        public static string SetValueForTBoxOpmerkingen1 = "";
-        public static string SetValueForCBoxSoortFlora1 = "";
-        public static string SetValueForCBoxWaterAantal1 = "";
-        public static string SetValueForCBoxSnoeienAantal1 = "";
+        public static string SetValueForTBoxNaam1 = Empty;
+        public static string SetValueForTBoxWater1 = Empty;
+        public static string SetValueForTBoxSnoeien1 = Empty;
+        public static string SetValueForTBoxJaargetijde1 = Empty;
+        public static string SetValueForTBoxOpmerkingen1 = Empty;
+        public static string SetValueForCBoxSoortFlora1 = Empty;
+        public static string SetValueForCBoxWaterAantal1 = Empty;
+        public static string SetValueForCBoxSnoeienAantal1 = Empty;
 
         private void BtnFloraToevoegen_Click(object sender, EventArgs e)
         {
 
             // Zorgt ervoor dat je alleen de plant kan opslaan als alles is ingevuld behalve het opmerkingen vakje (deze mag leeg blijven)
-            if (TBoxNaam.Text != "" && NumUDWater.Text != "0" && NumUDSnoeien.Text != "0" && TBoxJaargetijdeSnoeien.Text != ""
-                && CBoxSoortFlora.Text != "" && CBoxWaterAantal.Text != "" && CBoxSnoeienAantal.Text != "" && TBoxJaargetijdeWater.Text != "")
+            if (TBoxNaam.Text != Empty && NumUDWater.Text != "0" && NumUDSnoeien.Text != "0" && TBoxJaargetijdeSnoeien.Text != Empty
+                && CBoxSoortFlora.Text != Empty && CBoxWaterAantal.Text != Empty && CBoxSnoeienAantal.Text != Empty && TBoxJaargetijdeWater.Text != Empty)
             {
                 string SetValueForTBoxNaam1 = TBoxNaam.Text;
                 string SetValueForTBoxWater1 = NumUDWater.Text;

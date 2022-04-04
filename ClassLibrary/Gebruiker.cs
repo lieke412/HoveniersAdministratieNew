@@ -9,12 +9,12 @@ namespace HoveniersAdministratieNew_DomeinClasses
     public abstract class Gebruiker
     {
         public string Naam;
-        public string Rol;
+        public bool IsManager;
 
-        public Gebruiker(string Naam, string Rol)
+        public Gebruiker(string Naam, bool IsManager)
         {
             this.Naam = Naam;
-            this.Rol = Rol; 
+            this.IsManager = IsManager;
         }
 
         /*public void PlantenToevoegen()
